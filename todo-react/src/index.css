@@ -122,7 +122,7 @@ button{
   border: none;
   border-radius: 2px;
   color: white;
-  background-color: transparent;
+  background-color: rgb(184, 73, 184);
   box-shadow: 0 0 20px rgba(30, 29, 29, 0.5);
 }
 
@@ -146,12 +146,19 @@ li{
   width: 400px;
   margin-left: -40px;
   position: relative;
+  cursor: pointer;
 }
 
 li.completed span{
   text-decoration: line-through;
   color: gray;
 }
+li.completed{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) inset;
+  text-decoration: line-through;
+  color: gray;
+}
+
 
 .delete{
   background-color: #f57e60;
@@ -160,4 +167,19 @@ li.completed span{
   top: 50%;
   transform: translateY(-50%);
   height: 29px;
+}
+
+button#btn:hover{
+  transform: scale(1.1);
+  /* box-sizing: border-box; */
+}
+
+button#btn:active{
+  transform: scale(1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+.delete:hover{
+  /* color: #e568cc; */
+  background-color: rgb(184, 73, 184);
 }
